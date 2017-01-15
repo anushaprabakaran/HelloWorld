@@ -14,34 +14,25 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="HelloWorld" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBV-IQ-bZI">
-                                <rect key="frame" x="104" y="63" width="113" height="33"/>
+                                <rect key="frame" x="123" y="61" width="129" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="APB-Fr-Zdp"/>
+                                    <constraint firstAttribute="height" constant="33" id="0gJ-R9-ql1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.033065097402205978" blue="0.11614681219446232" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIP-MP-Xv1">
-                                <rect key="frame" x="94" y="237" width="157" height="35"/>
-                                <state key="normal" title="SNOQUALMIE FALLS">
-                                    <color key="titleColor" red="0.91474512370000005" green="0.91474512370000005" blue="0.91474512370000005" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="snoqualmieFallsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1oo-zB-zfO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgG-jg-I0i">
-                                <rect key="frame" x="141" y="345" width="38" height="30"/>
-                                <state key="normal" title="Night"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPd-gd-5du">
-                                <rect key="frame" x="113" y="294" width="109" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPd-gd-5du">
+                                <rect key="frame" x="129" y="440" width="117" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="ZPZ-88-45X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="FERRIS WHEEL">
                                     <color key="titleColor" red="0.91474512370000005" green="0.91474512370000005" blue="0.91474512370000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -49,10 +40,28 @@
                                     <action selector="ferrisWheelClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EFQ-UT-6SO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIP-MP-Xv1">
+                                <rect key="frame" x="109" y="342" width="157" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="50E-hI-3Tt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="SNOQUALMIE FALLS">
+                                    <color key="titleColor" red="0.91474512370000005" green="0.91474512370000005" blue="0.91474512370000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="snoqualmieFallsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1oo-zB-zfO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yIP-MP-Xv1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S0f-1v-bHh"/>
+                            <constraint firstItem="nPd-gd-5du" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h7G-tg-BBA"/>
+                            <constraint firstItem="fBV-IQ-bZI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zWk-9B-gYW"/>
+                        </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="Heading" destination="fBV-IQ-bZI" id="KIc-DK-tWZ"/>
                         <outlet property="ferrisWheelButton" destination="nPd-gd-5du" id="APf-4Y-mZL"/>
@@ -62,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="307"/>
+            <point key="canvasLocation" x="244.5" y="306.5"/>
         </scene>
         <!--ImageView-->
         <scene sceneID="kPP-6D-A38">
@@ -73,11 +82,13 @@
                         <viewControllerLayoutGuide type="bottom" id="7SO-Rr-k0B"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AMv-k2-UW5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSO-Li-D8k">
-                                <rect key="frame" x="79" y="493" width="163" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSO-Li-D8k">
+                                <rect key="frame" x="82" y="586" width="210" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <size key="titleShadowOffset" width="3" height="0.0"/>
                                 <state key="normal" title="BACK TO MAIN MENU">
                                     <color key="titleColor" red="0.9912918409" green="0.95827200010000002" blue="0.012350347919999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -87,13 +98,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JSO-Li-D8k" firstAttribute="centerX" secondItem="AMv-k2-UW5" secondAttribute="centerX" id="1Db-kc-jJ5"/>
+                        </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qda-FO-a1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="uQg-X4-JNV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="610" y="307"/>
+            <point key="canvasLocation" x="609.5" y="306.5"/>
         </scene>
     </scenes>
 </document>
