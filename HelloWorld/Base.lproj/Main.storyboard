@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1912" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="HelloWorld" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBV-IQ-bZI">
+                                <rect key="frame" x="104" y="63" width="113" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="APB-Fr-Zdp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="1" green="0.033065097402205978" blue="0.11614681219446232" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIP-MP-Xv1">
+                                <rect key="frame" x="94" y="237" width="157" height="35"/>
+                                <state key="normal" title="SNOQUALMIE FALLS">
+                                    <color key="titleColor" red="0.91474512370000005" green="0.91474512370000005" blue="0.91474512370000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="snoqualmieFallsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1oo-zB-zfO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgG-jg-I0i">
+                                <rect key="frame" x="141" y="345" width="38" height="30"/>
+                                <state key="normal" title="Night"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPd-gd-5du">
+                                <rect key="frame" x="113" y="294" width="109" height="31"/>
+                                <state key="normal" title="FERRIS WHEEL">
+                                    <color key="titleColor" red="0.91474512370000005" green="0.91474512370000005" blue="0.91474512370000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ferrisWheelClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EFQ-UT-6SO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="Heading" destination="fBV-IQ-bZI" id="KIc-DK-tWZ"/>
+                        <outlet property="ferrisWheelButton" destination="nPd-gd-5du" id="APf-4Y-mZL"/>
+                        <outlet property="snoqualmieFallsButton" destination="yIP-MP-Xv1" id="dvc-be-NSV"/>
+                        <segue destination="bg7-rW-ZjM" kind="presentation" identifier="MainToImage" modalTransitionStyle="flipHorizontal" id="zNR-1C-AaO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="307"/>
+        </scene>
+        <!--ImageView-->
+        <scene sceneID="kPP-6D-A38">
+            <objects>
+                <viewController storyboardIdentifier="ImageView" title="ImageView" wantsFullScreenLayout="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bg7-rW-ZjM" customClass="ImageView" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EoY-xP-H1r"/>
+                        <viewControllerLayoutGuide type="bottom" id="7SO-Rr-k0B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AMv-k2-UW5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSO-Li-D8k">
+                                <rect key="frame" x="79" y="493" width="163" height="48"/>
+                                <state key="normal" title="BACK TO MAIN MENU">
+                                    <color key="titleColor" red="0.9912918409" green="0.95827200010000002" blue="0.012350347919999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uQg-X4-JNV" kind="unwind" unwindAction="unwindToMain:" id="DZU-lX-sVl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qda-FO-a1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="uQg-X4-JNV" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="307"/>
+        </scene>
+    </scenes>
+</document>
