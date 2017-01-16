@@ -27,21 +27,8 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPd-gd-5du">
-                                <rect key="frame" x="129" y="440" width="117" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="ZPZ-88-45X"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="FERRIS WHEEL">
-                                    <color key="titleColor" red="0.91474512370000005" green="0.91474512370000005" blue="0.91474512370000005" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="ferrisWheelClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EFQ-UT-6SO"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIP-MP-Xv1">
-                                <rect key="frame" x="109" y="342" width="157" height="35"/>
+                                <rect key="frame" x="109" y="316" width="157" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="50E-hI-3Tt"/>
                                 </constraints>
@@ -51,6 +38,19 @@
                                 </state>
                                 <connections>
                                     <action selector="snoqualmieFallsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1oo-zB-zfO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPd-gd-5du">
+                                <rect key="frame" x="129" y="413" width="117" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="ZPZ-88-45X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="FERRIS WHEEL">
+                                    <color key="titleColor" red="0.91474512370000005" green="0.91474512370000005" blue="0.91474512370000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ferrisWheelClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EFQ-UT-6SO"/>
                                 </connections>
                             </button>
                         </subviews>
